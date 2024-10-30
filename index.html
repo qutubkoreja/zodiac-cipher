@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <h1>Zodiac Cipher</h1>
+        <h2>Cipher Text and Image Converter</h2>
+
+        <!-- How to Use Section -->
+        <div class="how-to-use">
+            <h3>How to Use</h3>
+            <ol>
+                <li>Enter the text you want to encode or decode in the text area.</li>
+                <li>Set the shift value (1-25) for the Caesar cipher.</li>
+                <li>Click the "Encode" or "Decode" button to see the output.</li>
+                <li>For images, upload an image file.</li>
+                <li>Enter the text you want to hide in the image.</li>
+                <li>Click "Encode Image" to hide the text in the image.</li>
+                <li>To decode, upload the encoded image and click "Decode Image."</li>
+                <li>Decoded text will appear in the designated area.</li>
+            </ol>
+        </div>
+
+        <!-- Text Encoding/Decoding Section -->
+        <h3>Text Encoding/Decoding</h3>
+        <textarea id="inputText" placeholder="Enter text here..." rows="5"></textarea>
+        <input type="number" id="shift" placeholder="Shift (1-25)" min="1" max="25" value="3">
+        <div class="button-container">
+            <button id="encodeBtn">Encode</button>
+            <button id="decodeBtn">Decode</button>
+        </div>
+        <h4>Output</h4>
+        <textarea id="outputText" rows="5" readonly></textarea>
+
+        <!-- Image Encoding/Decoding Section -->
+        <h3>Image Encoding/Decoding</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <textarea id="hiddenText" placeholder="Text to hide in image..." rows="3"></textarea>
+        <div class="button-container">
+            <button id="encodeImageBtn">Encode Image</button>
+            <button id="decodeImageBtn">Decode Image</button>
+        </div>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <h4>Decoded Text</h4>
+        <textarea id="decodedText" rows="5" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

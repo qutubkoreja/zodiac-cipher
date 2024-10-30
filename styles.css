@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://media.giphy.com/media/oOxSXI5D2cvc6kYSvw/giphy.gif'); /* Set your GIF URL here */
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    z-index: -1; /* Send it to the back */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Add some transparency */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+}
+
+h3 {
+    color: #007bff;
+}
+
+h4 {
+    color: #555;
+}
+
+.how-to-use {
+    margin: 20px 0;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+textarea, input[type="file"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003d80;
+}
